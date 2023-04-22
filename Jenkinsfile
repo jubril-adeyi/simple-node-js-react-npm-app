@@ -8,8 +8,8 @@ pipeline {
    stages {
     stage('Build') {
       steps {
-        sh "apk add nodejs"
         sh 'npm version'
+        sh 'npm install'
       }
     
     }
