@@ -2,6 +2,9 @@ pipeline {
     agent {
         label 'agent1'
     }
+    tools {
+        nodejs 'nodejs'
+    }
      environment {
             CI = 'true'
         }
