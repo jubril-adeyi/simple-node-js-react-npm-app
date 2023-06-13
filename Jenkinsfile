@@ -5,7 +5,6 @@ pipeline {
     tools {
       nodejs 'node'
     }
-
      environment {
             CI = 'true'
         }
@@ -28,7 +27,6 @@ pipeline {
 //                                 sh './jenkins/scripts/kill.sh'
 //                             }
 //                         }
-
     }
 }
 
