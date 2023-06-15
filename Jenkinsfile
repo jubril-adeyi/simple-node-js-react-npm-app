@@ -4,7 +4,9 @@ pipeline {
     }
     tools {
         nodejs 'node'
+        terraform 'terraform'
     }
+
     environment {
         CI = 'true'
     }
@@ -26,6 +28,7 @@ pipeline {
                 input message: 'Finished using the web site? (Click "Proceed" to continue)'
                 sh './jenkins/scripts/kill.sh'
             }
+        
         }
     }
 }
