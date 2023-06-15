@@ -4,7 +4,6 @@ pipeline {
     }
     tools {
         nodejs 'node'
-        terraform 'terraform'
     }
 
     environment {
@@ -15,8 +14,6 @@ pipeline {
             steps {
                 sh 'npm version'
                 sh 'npm install'
-                sh 'terraform version'
-                sh 'terraform init'
             }
         }
         stage('Test') {
